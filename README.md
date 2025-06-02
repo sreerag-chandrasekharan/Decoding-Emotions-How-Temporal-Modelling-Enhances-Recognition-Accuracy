@@ -43,9 +43,6 @@ This thesis investigates facial emotion recognition using deep learning methods 
 
 - Transfer learning enabled faster convergence and improved accuracy on small datasets.  
 - The CNN-LSTM model achieved strong performance in recognizing dynamic facial expressions.  
-- Best model accuracy on Oulu-CASIA: [insert accuracy]%
+- Best model accuracy on Oulu-CASIA: [94]%
 
 ---
-
-## Project Structure
-
