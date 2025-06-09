@@ -2,13 +2,11 @@
 
 Master Thesis - Biomedical Engineering  
 
---
 
 ## Summary
 
 This project explores **Facial Emotion Recognition (FER)** using **pre-trained CNNs** (ResNet50, GoogleNet, AlexNet) combined with **LSTM layers** to model temporal patterns. The system achieved **96.4% accuracy** on the **Oulu-CASIA dataset** and is optimized for potential **real-time applications**.
 
---
 
 ## Methods
 
