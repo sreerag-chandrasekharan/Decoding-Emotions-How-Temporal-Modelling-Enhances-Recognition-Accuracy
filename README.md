@@ -50,6 +50,7 @@ The model pipeline includes:
 | AlexNet + LSTM  | 94.06%     |
 
 Adding LSTM layers consistently improved performance across all models. **ResNet50 + LSTM** yielded the best accuracy.
+  ![Face Detection Example](images/R_R_2.png)
 
 --
 
