@@ -22,6 +22,7 @@ The model pipeline includes:
 - **Model Architecture**:
   - **Model 1**: CNNs — ResNet50, GoogleNet, AlexNet.
   - **Model 2**: CNN feature extraction + LSTM layers with 64–250 units.
+  -  ![Face Detection Example](images/LSTMARC.png)
 
 - **Training**:
   - Optimizers: Adam (Model 1), SGDM (Model 2).
