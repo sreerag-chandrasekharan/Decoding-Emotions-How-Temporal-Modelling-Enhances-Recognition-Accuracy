@@ -1,48 +1,64 @@
-# README – Master's Thesis
+# Decoding Emotions: How Temporal Modelling Enhances Recognition Accuracy
 
-**Title:** Facial Emotion Recognition Using Machine Learning and Deep Learning Techniques  
-**Author:** Sreerag Chandrasekharan  
-**Institution:** Hochschule Furtwangen University  
-**Program:** Master of Science in Biomedical Engineering  
-**Date of Submission:** [April, 2024]  
+Master Thesis - Biomedical Engineering  
+Sreerag Chandrasekharan  
 
 ---
 
-## Overview
+## Summary
 
-This thesis investigates facial emotion recognition using deep learning methods implemented in MATLAB. The work focuses on utilizing transfer learning with pretrained CNN models and LSTM networks to classify emotional states from facial expressions in image sequences. The Oulu-CASIA dataset, known for its high-quality video sequences under controlled lighting conditions, is used to train and evaluate the models.
+Developed a **Facial Emotion Recognition (FER) system** that combines **pre-trained CNN models** (ResNet50, GoogleNet, AlexNet) with **LSTM** networks to capture **temporal patterns** in facial expressions.
 
----
+This approach enhances recognition accuracy and robustness for potential real-time applications — particularly to support individuals with **Autism Spectrum Disorder (ASD)**.
 
-## Objectives
-
-- To develop a robust facial emotion recognition model using MATLAB.  
-- To apply transfer learning with pretrained convolutional neural networks (CNNs) for feature extraction.  
-- To use LSTM networks to learn temporal dynamics from facial expression sequences.  
-- To evaluate model performance using metrics like accuracy and confusion matrices.
+Using the **Oulu-CASIA facial expression database**, my optimized pipeline achieved **up to 96.4% accuracy**, showing the strong benefits of integrating temporal modeling with deep learning for FER.
 
 ---
 
-## Tools and Technologies
+## Methods
 
-- Software: MATLAB  
-- Toolboxes:  
-  - Deep Learning Toolbox  
-  - Computer Vision Toolbox  
-- Techniques:  
-  - Transfer Learning (e.g., using VGG-16, ResNet-50)  
-  - LSTM for temporal sequence modeling  
-  - Image augmentation and preprocessing  
-- Dataset: Oulu-CASIA NIR&VIS facial expression database  
-  - 6 expression classes: happiness, anger, disgust, fear, sadness, surprise  
-  - Videos recorded under normal, strong, and weak lighting conditions
+The model pipeline includes:
+
+- **Preprocessing**:
+  - Face detection using Haar Cascade and LBP.
+  - Image resizing based on CNN input needs.
+  - Data augmentation with Salt & Pepper noise and brightness enhancement.
+  
+- **Model Architecture**:
+  - **Model 1**: CNNs — ResNet50, GoogleNet, AlexNet.
+  - **Model 2**: CNN feature extraction + LSTM layers with 64–250 units.
+
+- **Training**:
+  - Optimizers: Adam (Model 1), SGDM (Model 2).
+  - Dataset split: 70% training, 30% validation.
+  - Epochs: 40, Batch size: 50, Learning rate: 0.0001.
 
 ---
 
-## Key Results
+## Results
 
-- Transfer learning enabled faster convergence and improved accuracy on small datasets.  
-- The CNN-LSTM model achieved strong performance in recognizing dynamic facial expressions.  
-- Best model accuracy on Oulu-CASIA: [94]%
+### Model 1 (CNN only)
+
+| Model    | Max Accuracy |
+|----------|--------------|
+| ResNet50 | 84.48%       |
+| GoogleNet| 87.50%       |
+| AlexNet  | 86.13%       |
+
+### Model 2 (CNN + LSTM)
+
+| Model + LSTM | Max Accuracy |
+|--------------|--------------|
+| ResNet50 + LSTM | **96.40%** |
+| GoogleNet + LSTM| 94.21%     |
+| AlexNet + LSTM  | 94.06%     |
+
+Adding LSTM layers consistently improved performance across all models. **ResNet50 + LSTM** yielded the best accuracy.
+
+---
+
+## Tags
+
+`Facial-Emotion-Recognition` `Deep-Learning` `LSTM` `CNN` `Autism-Spectrum-Disorder` `Image-Classification` `Temporal-Modeling` `Machine-Learning` `Biomedical-Engineering` `Master-Thesis`
 
 ---
