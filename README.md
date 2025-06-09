@@ -22,6 +22,8 @@ The model pipeline includes:
   - Face detection using Haar Cascade and LBP.
   - Image resizing based on CNN input needs.
   - Data augmentation with Salt & Pepper noise and brightness enhancement.
+    ![Face Detection Example](images/Processed.png)
+
   
 - **Model Architecture**:
   - **Model 1**: CNNs — ResNet50, GoogleNet, AlexNet.
