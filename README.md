@@ -29,7 +29,6 @@ The model pipeline includes:
   - Dataset split: 70% training, 30% validation.
   - Epochs: 40, Batch size: 50, Learning rate: 0.0001.
 
---
 
 ## Results
 
@@ -52,7 +51,6 @@ The model pipeline includes:
 Adding LSTM layers consistently improved performance across all models. **ResNet50 + LSTM** yielded the best accuracy.
   ![Face Detection Example](images/R_R_2.png)
 
---
 
 ## Tags
 
