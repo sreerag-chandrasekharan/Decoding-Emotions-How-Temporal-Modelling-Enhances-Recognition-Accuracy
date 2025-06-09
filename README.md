@@ -1,7 +1,6 @@
 # Decoding Emotions: How Temporal Modelling Enhances Recognition Accuracy
 
 Master Thesis - Biomedical Engineering  
-Sreerag Chandrasekharan  
 
 ---
 
